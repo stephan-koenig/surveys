@@ -1,19 +1,37 @@
 ---
-title: "CPSC 320 Worksheets survey"
+title: "CPSC 320 worksheets survey"
 author: "Stephan Koenig and Patrice Belleville"
+format:
+  html: default
+  docx: default
 ---
 
-By completing this survey, you are giving permission to the researchers to use its results as stated below:
+## Preamble
 
-1.  This survey is not anomymous, but the only people who will have access to non-anonymized data will be Stephan Koenig and Patrice Belleville.
+Thank you for taking the time to complete this survey.
+As you have discovered, worksheets are an integral part of CPSC 320.
+The survey will ask you to reflect on your experience with worksheets in CPSC 320.
+Your responses will help the CPSC 320 instructional team better understand your experiences in the course and consider how they can improve it in the future.
+The survey should take about 5--10 minutes to complete.
 
-2.  A summary of the results will be made available to your instructors, and possibly appear in an article that will be submitted to a conference or journal on Computer Science education.
+## Informed consent
 
-3.  The summary will not include any identifying information, although it may include statements about (for instance) how final course grades correlated with responses to some of the survey questions.
+The primary use of these survey data is for course improvement and to explore student experiences in CPSC 320.
+Your answers will **not be anonymous**.
+You will log in with your CWL, the system will use that information to automatically add your name to your survey responses, and we will ask you for your student number.
+The only people with access to the non-anonymized response data are Stephan Koenig, Science Education Specialist in the Computer Science department, and Patrice Belleville, Associate Professor of Teaching.
+They might use the identifying information to associate your survey responses with your grades in CPSC 320.
+A summary of the results without identifying information will be available to your instructors.
+The summary might include statements about how final course grades correlated with responses to some survey questions.
+If you have any questions or would like to learn more about this survey, please contact the survey analysts, Stephan Koenig (<stephan.koenig@ubc.ca>) or Patrice Belleville (<patrice@cs.ubc.ca>).
 
-Everyone who answers the survey will get an extra x% on their assignment grade at the end of the course.
+The instructional team may also want to include some of the data for conference presentations and/or publications in the future, but only data from students who consent to their use would be included in this analysis.
+The use of your survey responses is entirely voluntary and you may refuse their use for external analysis at any time without jeopardy to your class standing.
+Either way, by filling out this survey, you will get an extra x% on your assignment grade at the end of the course.
+**You must complete the entire survey to be awarded the bonus.** Would you be willing to have your data included in such external analyses?
 
-> x needs to be determined, and the instructors need to agree
+-   [ ] Yes, my data can be considered for conference presentations and/or publications
+-   [ ] No, only use my data for internal course improvement
 
 Questions:
 
