@@ -33,103 +33,51 @@ Either way, by filling out this survey, you will get an extra x% on your assignm
 -   [ ] Yes, my data can be considered for conference presentations and/or publications
 -   [ ] No, only use my data for internal course improvement
 
-Questions:
+## Questions
 
-> Question 1 and 2 might be redundant if we ask them to login using their CWL.
-
-1.  Name
-
-2.  Student number
-
-> Questions 3 to 5 copied from an earlier survey (2018W) that asked about all of the course activities, not only the worksheets.
-> Our SIGCSE 2020 paper concentrated on the tutorial quizzes, and didn't look at the data about worksheets.
-> I believe we need to ask these questions here as the answers are likely to be correlated to those of questions 6 to 9.
-
-3.  Please rate your agreement or disagreement with the following statements:
-
-    > To keep the survey to a reasonable length, I would recommend keeping only 3a, 3b and 3f.
-
-    a.  The in-lecture worksheet activities were engaging.
-
-        ```         
-        * Strongly Disagree * Disagree * Neutral * Agree * Strongly Agree
-        ```
-
-    b.  The in-lecture worksheet activities were useful for learning the course concepts
-
-        ```         
-        * Strongly Disagree * Disagree * Neutral * Agree * Strongly Agree
-        ```
-
-    c.  The in-lecture worksheet activities were useful for completing the assignments
-
-        ```         
-        * Strongly Disagree * Disagree * Neutral * Agree * Strongly Agree
-        ```
-
-    d.  The in-lecture worksheet activities were useful for preparing for the exams
-
-        ```         
-        * Strongly Disagree * Disagree * Neutral * Agree * Strongly Agree
-        ```
-
-    e.  The in-lecture worksheet activities were useful for understanding the pre-class readings
-
-        ```         
-        * Strongly Disagree * Disagree * Neutral * Agree * Strongly Agree
-        ```
-
-    f.  The in-lecture worksheet activities were useful for your overall success in the course
-
-        ```         
-        * Strongly Disagree * Disagree * Neutral * Agree * Strongly Agree
-        ```
-
-4.  How often did you attend lectures?
-    (either your scheduled lecture or another timeslot)?
+1.  The in-lecture worksheet activities helped me learn the course concepts.
 
     ```         
-    * Never or rarely * Sometimes * Half the time * Frequently * Always or almost always
+    * Strongly Disagree * Disagree * Neutral * Agree * Strongly Agree
     ```
 
-5.  To what extent did the worksheet-based lecture style encourage or discourage your attendance at lectures?
+2.  Describe if you found the in-lecture worksheet activities engaging.
+    Why or why not?
+
+    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+3.  How often did you attend lectures in the last month (either your scheduled lecture or another time slot)?
+
+    ```         
+    * Rarely or never * A few times * Once a week * Twice a week * Always or almost always
+    ```
+
+4.  How much did the worksheet-based lecture style encourage or discourage you from attending lectures?
 
     ```         
     * Strongly Discourage * Discourage * Neutral * Enourage * Strongly Encourage
     ```
 
-6.  On average, what percentage of the time given in class to work in small groups on worksheet questions did you spend doing each of the following?
-    Note that talking about a question with other members of your group counts as working on the worksheet.
+5.  Over the last month, during periods dedicated to working in small groups on worksheets, how often did you spend your time on one of the following approaches?
+    **Note:** Discussing a question with other members of your group counts as working on the worksheet.
 
-    a.  Working on the worksheet and making (some) progress?
+    ```         
+    * Never or rarely * A few times * Once a week * Twice a week * Almost always or always
+    ```
 
-    b.  Working on the worksheet but getting stuck and not making any or much progress?
+    a.  Waiting for the instructor to go over solutions without working on the assigned section of the worksheet yourself?
 
-    c.  Working ahead or waiting for the instructor to go over solutions after you'd completed the part(s) of the worksheet that had been assigned?
+    b.  Working on the worksheet but getting stuck and making no or little progress.
 
-    d.  Waiting for the instructor to go over solutions, without having first completed the part(s) of the worksheet that had been assigned?
+    c.  Working and making (some) progress on the worksheet.
 
-    e.  Something else?
+    d.  Completing the assigned section of the worksheet before the instructor reviews the solutions.
 
-        Write down what that something else was here: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+6.  What determined how you approached each worksheet?
+    Did it vary among worksheets?
 
-7.  If your answer to question 3d was 33% \[figure out right %age\] or higher, please explain why you waited for the instructor to go over solutions without having first completed the part(s) of the worksheet that had been assigned.
+    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-8.  Did the percentages from question 3
+7.  Is there anything else you would like to share about using the worksheets?
 
-    a.  Remain similar for every worksheet?
-
-    b.  Vary wildly from one worksheet to another, or from one part of one worksheet to the next?
-
-9.  If your answer to question 5 was (a), then you're done and only need to click Submit.
-    If your answer to question 5 was (b), why did the percentages from question 3 vary?
-
-    a.  It depends on the difficulty of the questions
-
-    b.  It depends on my physical and mental state at the time.
-
-    c.  I sometimes used the time reserved for group work to complete work for another course instead.
-
-    d.  Some other reason
-
-        Write down what that other reason was here: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
