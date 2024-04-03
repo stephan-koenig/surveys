@@ -22,22 +22,24 @@ You will log in with your CWL, the system will use that information to automatic
 The only people with access to the non-anonymized response data are Stephan Koenig, Science Education Specialist in the Computer Science department, and Patrice Belleville, Associate Professor of Teaching.
 They might use the identifying information to associate your survey responses with your grades in CPSC 320.
 A summary of the results without identifying information will be available to your instructors.
+The summary will only contain aggregated and anonymous data and will not be tied to any students' identities.
 The summary might include statements about how final course grades correlated with responses to some survey questions.
 If you have any questions or would like to learn more about this survey, please contact the survey analysts, Stephan Koenig (<stephan.koenig@ubc.ca>) or Patrice Belleville (<patrice@cs.ubc.ca>).
 
 The instructional team may also want to include some of the data for conference presentations and/or publications in the future, but only data from students who consent to their use would be included in this analysis.
-The use of your survey responses is entirely voluntary and you may refuse their use for external analysis at any time without jeopardy to your class standing.
+The use of your survey responses is entirely voluntary and you may refuse their use for external or internal analysis at any time without jeopardy to your class standing.
 Either way, by filling out this survey, you will get an extra x% on your assignment grade at the end of the course.
-**You must complete the entire survey to be awarded the bonus.** Would you be willing to have your data included in such external analyses?
+**You must complete the entire survey to be awarded the bonus.**
 
--   [ ] Yes, my data can be considered for conference presentations and/or publications
--   [ ] No, only use my data for internal course improvement
+- [ ] I consent to the use of my anonymized data in publication/presentation and for course improvement (my instructor will not see any of my responses tied to my identity).
+- [ ] I consent to the use of my anonymized data only for course improvement (my instructor will not see any of my responses tied to my identity).
+- [ ] I do not want my responses linked my identity for analysis (my student number will only be used to assign course credit for completing the survey).
 
 ## Questions
 
 1.  The in-lecture worksheet activities helped me learn the course concepts.
 
-    ```         
+    ```
     * Strongly Disagree * Disagree * Neutral * Agree * Strongly Agree
     ```
 
@@ -48,24 +50,24 @@ Either way, by filling out this survey, you will get an extra x% on your assignm
 
 3.  How often did you attend lectures in the last month (either your scheduled lecture or another time slot)?
 
-    ```         
+    ```
     * Rarely or never * A few times * Once a week * Twice a week * Always or almost always
     ```
 
 4.  How much did the worksheet-based lecture style encourage or discourage you from attending lectures?
 
-    ```         
-    * Strongly Discourage * Discourage * Neutral * Enourage * Strongly Encourage
+    ```
+    * Strongly Discourage * Discourage * Neutral * Encourage * Strongly Encourage
     ```
 
 5.  Over the last month, during periods dedicated to working in small groups on worksheets, how often did you spend your time on one of the following approaches?
     **Note:** Discussing a question with other members of your group counts as working on the worksheet.
 
-    ```         
-    * Never or rarely * A few times * Once a week * Twice a week * Almost always or always
+    ```
+    * Never or rarely * Infrequently * Between 1/3rd to 2/3rds of the time * Often * Almost always or always
     ```
 
-    a.  Waiting for the instructor to go over solutions without working on the assigned section of the worksheet yourself?
+    a.  Waiting for the instructor to go over solutions without working on the assigned section of the worksheet yourself.
 
     b.  Working on the worksheet but getting stuck and making no or little progress.
 
