@@ -9,9 +9,8 @@ format:
 ## Preamble
 
 Thank you for taking the time to complete this survey.
-As you have discovered, worksheets are an integral part of CPSC 320.
-The survey will ask you to reflect on your experience with worksheets in CPSC 320.
-Your responses will help the CPSC 320 instructional team better understand your experiences in the course and consider how they can improve it in the future.
+As you have discovered, worksheets are an integral part of CPSC 320 and this survey will ask you to reflect on your experience with them throughout the course.
+Your responses will help the instructional team better understanding your experiences and consider how they can improve the course in the future
 The survey should take about 5--10 minutes to complete.
 
 ## Informed consent
@@ -21,29 +20,29 @@ Your answers will **not be anonymous**.
 You will log in with your CWL, the system will use that information to automatically add your name to your survey responses, and we will ask you for your student number.
 The only people with access to the non-anonymized response data are Stephan Koenig, Science Education Specialist in the Computer Science department, and Patrice Belleville, Associate Professor of Teaching.
 They might use the identifying information to associate your survey responses with your grades in CPSC 320.
-A summary of the results without identifying information will be available to your instructors.
+A summary of the results without identifying information will be available to your instructors after the end of the term.
 The summary will only contain aggregated and anonymous data and will not be tied to any students' identities.
 The summary might include statements about how final course grades correlated with responses to some survey questions.
 If you have any questions or would like to learn more about this survey, please contact the survey analysts, Stephan Koenig (<stephan.koenig@ubc.ca>) or Patrice Belleville (<patrice@cs.ubc.ca>).
 
 The instructional team may also want to include some of the data for conference presentations and/or publications in the future, but only data from students who consent to their use would be included in this analysis.
 The use of your survey responses is entirely voluntary and you may refuse their use for external or internal analysis at any time without jeopardy to your class standing.
-Either way, by filling out this survey, you will get an extra x% on your assignment grade at the end of the course.
-**You must complete the entire survey to be awarded the bonus.**
+
+Would you be willing to participate in this survey and have your data included in internal and/or external analyses?
 
 - [ ] I consent to the use of my anonymized data in publication/presentation and for course improvement (my instructor will not see any of my responses tied to my identity).
 - [ ] I consent to the use of my anonymized data only for course improvement (my instructor will not see any of my responses tied to my identity).
-- [ ] I do not want my responses linked my identity for analysis (my student number will only be used to assign course credit for completing the survey).
+- [ ] I do not want participate in this survey (this will end this survey).
 
 ## Questions
 
-1.  The in-lecture worksheet activities helped me learn the course concepts.
+1.  The in-class worksheet activities helped me learn the course concepts.
 
     ```
     * Strongly Disagree * Disagree * Neutral * Agree * Strongly Agree
     ```
 
-2.  Describe if you found the in-lecture worksheet activities engaging.
+2.  Did you find the in-class worksheet activities engaging?
     Why or why not?
 
     \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
@@ -54,32 +53,32 @@ Either way, by filling out this survey, you will get an extra x% on your assignm
     * Rarely or never * A few times * Once a week * Twice a week * Always or almost always
     ```
 
-4.  How much did the worksheet-based lecture style encourage or discourage you from attending lectures?
+4.  Did having in-class worksheets encourage or discourage you from attending lectures?
 
     ```
     * Strongly Discourage * Discourage * Neutral * Encourage * Strongly Encourage
     ```
 
-5.  Over the last month, during periods dedicated to working in small groups on worksheets, how often did you spend your time on one of the following approaches?
-    **Note:** Discussing a question with other members of your group counts as working on the worksheet.
+5.  In the last month, when working in small groups on in-class worksheets (**note:** discussing a question also counts as working), how often did you spend your time on: 
 
     ```
-    * Never or rarely * Infrequently * Between 1/3rd to 2/3rds of the time * Often * Almost always or always
+    * Never * Infrequently * Sometimes * Often * Almost always or always
     ```
 
-    a.  Waiting for the instructor to go over solutions without working on the assigned section of the worksheet yourself.
+    a.  Waiting for the instructor to go over solutions without working on the assigned section of the worksheet.
 
-    b.  Working on the worksheet but getting stuck and making no or little progress.
+    b.  Working on the worksheet but getting stuck and making little or no progress.
 
     c.  Working and making (some) progress on the worksheet.
 
-    d.  Completing the assigned section of the worksheet before the instructor reviews the solutions.
+    d.  Completing the assigned section of the worksheet before the instructor reviewed the solutions.
 
-6.  What determined how you approached each worksheet?
-    Did it vary among worksheets?
+6.  What was your approach for completing the worksheets?
+    Did it vary according to the content of the worksheet?
+
 
     \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-7.  Is there anything else you would like to share about using the worksheets?
+7.  Is there anything else you would like to share about the use of worksheets in class?
 
     \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
