@@ -1,7 +1,7 @@
 project:
   type: default
 
-quarto-required: ">=1.4"
+quarto-required: ">=1.6"
 
 format:
   html:
