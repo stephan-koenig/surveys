@@ -10,7 +10,8 @@ format:
 
 ### Qualtrics survey data
 
-This workflow assumes that you generated a [Qualtrics API key](https://api.qualtrics.com/ZG9jOjg3NjYzMg-api-key-authentication) and saved it securely with `keyring::key_set("qualtrics_api_key")` in your OS's secure secret store. In addition, request access to the Qualtrics "CPSC 320 worksheets survey" from Stephan Koenig.
+This workflow assumes that you generated a [Qualtrics API key](https://api.qualtrics.com/ZG9jOjg3NjYzMg-api-key-authentication) and saved it securely with `keyring::key_set("qualtrics_api_key")` in your OS's secure secret store.
+In addition, request access to the Qualtrics "CPSC 320 worksheets survey" from Stephan Koenig.
 
 ```{r}
 #| label: qualtrics
@@ -49,7 +50,7 @@ survey <-
 
 Thank you for taking the time to complete this survey.
 As you have discovered, worksheets are an integral part of CPSC 320 and this survey will ask you to reflect on your experience with them throughout the course.
-Your responses will help the instructional team better understanding your experiences and consider how they can improve the course in the future
+Your responses will help the instructional team better understanding your experiences and consider how they can improve the course in the future.
 The survey should take about 5--10 minutes to complete.
 
 ### Informed consent
@@ -62,22 +63,22 @@ They might use the identifying information to associate your survey responses wi
 A summary of the results without identifying information will be available to your instructors after the end of the term.
 The summary will only contain aggregated and anonymous data and will not be tied to any students' identities.
 The summary might include statements about how final course grades correlated with responses to some survey questions.
-If you have any questions or would like to learn more about this survey, please contact the survey analysts, Stephan Koenig (<stephan.koenig@ubc.ca>) or Patrice Belleville (<patrice@cs.ubc.ca>).
+If you have any questions or would like to learn more about this survey, please contact the survey analysts, Stephan Koenig ([stephan.koenig\@ubc.ca](mailto:stephan.koenig@ubc.ca){.email}) or Patrice Belleville ([patrice\@cs.ubc.ca](mailto:patrice@cs.ubc.ca){.email}).
 
 The instructional team may also want to include some of the data for conference presentations and/or publications in the future, but only data from students who consent to their use would be included in this analysis.
 The use of your survey responses is entirely voluntary and you may refuse their use for external or internal analysis at any time without jeopardy to your class standing.
 
 Would you be willing to participate in this survey and have your data included in internal and/or external analyses?
 
-- [ ] I consent to the use of my anonymized data in publication/presentation and for course improvement (my instructor will not see any of my responses tied to my identity).
-- [ ] I consent to the use of my anonymized data only for course improvement (my instructor will not see any of my responses tied to my identity).
-- [ ] I do not want participate in this survey (this will end this survey).
+-   [ ] I consent to the use of my anonymized data in publication/presentation and for course improvement (my instructor will not see any of my responses tied to my identity).
+-   [ ] I consent to the use of my anonymized data only for course improvement (my instructor will not see any of my responses tied to my identity).
+-   [ ] I do not want participate in this survey (this will end this survey).
 
 ### Questions
 
 1.  The in-class worksheet activities helped me learn the course concepts.
 
-    ```
+    ```         
     * Strongly Disagree * Disagree * Neutral * Agree * Strongly Agree
     ```
 
@@ -88,19 +89,19 @@ Would you be willing to participate in this survey and have your data included i
 
 3.  How often did you attend lectures in the last month (either your scheduled lecture or another time slot)?
 
-    ```
+    ```         
     * Rarely or never * A few times * Once a week * Twice a week * Always or almost always
     ```
 
 4.  Did having in-class worksheets encourage or discourage you from attending lectures?
 
-    ```
+    ```         
     * Strongly Discourage * Discourage * Neutral * Encourage * Strongly Encourage
     ```
 
-5.  In the last month, when working in small groups on in-class worksheets (**note:** discussing a question also counts as working), how often did you spend your time on: 
+5.  In the last month, when working in small groups on in-class worksheets (**note:** discussing a question also counts as working), how often did you spend your time on:
 
-    ```
+    ```         
     * Never * Infrequently * Sometimes * Often * Almost always or always
     ```
 
@@ -114,7 +115,6 @@ Would you be willing to participate in this survey and have your data included i
 
 6.  What was your approach for completing the worksheets?
     Did it vary according to the content of the worksheet?
-
 
     \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
