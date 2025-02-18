@@ -7,3 +7,8 @@ options(
 
 # Use renv
 source("renv/activate.R")
+
+# Set error handler to rlang
+if (require(rlang, quietly = TRUE)) {
+  globalCallingHandlers(error = rlang::entrace)
+}
