@@ -6,14 +6,53 @@ format:
   docx: default
 ---
 
-## Preamble
+## Setup
+
+### Qualtrics survey data
+
+This workflow assumes that you generated a [Qualtrics API key](https://api.qualtrics.com/ZG9jOjg3NjYzMg-api-key-authentication) and saved it securely with `keyring::key_set("qualtrics_api_key")` in your OS's secure secret store. In addition, request access to the Qualtrics "CPSC 320 worksheets survey" from Stephan Koenig.
+
+```{r}
+#| label: qualtrics
+#| eval: false
+
+# Do only once per system
+# keyring::key_set("qualtrics_api_key")
+qualtRics::qualtrics_api_credentials(
+  api_key = keyring::key_get("qualtrics_api_key"),
+  base_url = "ubc.yul1.qualtrics.com"
+)
+
+surveys <- qualtRics::all_surveys()
+survey_id <- surveys$id[surveys$name == "CPSC 320 worksheets survey"]
+qualtRics::fetch_survey(survey_id) |>
+  qs2::qs_save("data/raw/cpsc-320_worksheets-survey.qs2")
+```
+
+## Analysis
+
+```{r}
+#| label: load-data
+
+survey <-
+  qs2::qs_read("data/raw/cpsc-320_worksheets-survey.qs2") |>
+  janitor::clean_names() |>
+  dplyr::filter(
+    status != "Survey Preview",
+    stringr::str_starts(q1, "I consent to")
+  )
+```
+
+## Survey
+
+### Preamble
 
 Thank you for taking the time to complete this survey.
 As you have discovered, worksheets are an integral part of CPSC 320 and this survey will ask you to reflect on your experience with them throughout the course.
 Your responses will help the instructional team better understanding your experiences and consider how they can improve the course in the future
 The survey should take about 5--10 minutes to complete.
 
-## Informed consent
+### Informed consent
 
 The primary use of these survey data is for course improvement and to explore student experiences in CPSC 320.
 Your answers will **not be anonymous**.
@@ -34,7 +73,7 @@ Would you be willing to participate in this survey and have your data included i
 - [ ] I consent to the use of my anonymized data only for course improvement (my instructor will not see any of my responses tied to my identity).
 - [ ] I do not want participate in this survey (this will end this survey).
 
-## Questions
+### Questions
 
 1.  The in-class worksheet activities helped me learn the course concepts.
 
