@@ -1,0 +1,91 @@
+---
+title: "CPSC 368 survey"
+author: "Stephan Koenig"
+---
+
+## Setup
+
+```{r}
+#| label: setup
+#| echo: false
+
+library(conflicted)
+library(dplyr)
+conflicts_prefer(dplyr::filter)
+library(here)
+
+pre_survey_file <- here("data", "raw", "cpsc-368_pre-survey.qs2")
+post_survey_file <- here("data", "raw", "cpsc-368_post-survey.qs2")
+```
+
+### Qualtrics survey data
+
+This workflow assumes that you generated a [Qualtrics API key](https://api.qualtrics.com/ZG9jOjg3NjYzMg-api-key-authentication) and saved it securely with `keyring::key_set("qualtrics_api_key")` in your OS's secure secret store.
+In addition, request access to the Qualtrics CPSC 368 surveys from Stephan Koenig or Jessica Wong.
+
+```{r}
+#| label: qualtrics
+#| eval: false
+
+# Do only once per system
+# keyring::key_set("qualtrics_api_key")
+qualtRics::qualtrics_api_credentials(
+  api_key = keyring::key_get("qualtrics_api_key"),
+  base_url = "ubc.yul1.qualtrics.com"
+)
+
+surveys <- qualtRics::all_surveys()
+pre_survey_id <-
+  surveys$id[surveys$name == "CPSC 368: AI Use Survey (Beginning of Term)"]
+post_survey_id <-
+  surveys$id[surveys$name == "CPSC 368: AI Use Survey (End of Term)"]
+qualtRics::fetch_survey(pre_survey_id) |>
+  qs2::qs_save(pre_survey_file)
+qualtRics::fetch_survey(post_survey_id) |>
+  qs2::qs_save(post_survey_file)
+```
+
+## Analysis
+
+```{r}
+#| label: load-data
+
+pre_survey <-
+  qs2::qs_read(pre_survey_file) |>
+  janitor::clean_names()
+
+completed_pre_survey <- pre_survey |>
+  rename(student_number = q1) |>
+  filter(!is.na(student_number)) |>
+  distinct(student_number) |>
+  mutate(pre_survey_completed = TRUE)
+
+post_survey <-
+  qs2::qs_read(post_survey_file) |>
+  janitor::clean_names()
+
+completed_post_survey <- post_survey |>
+  rename(student_number = q1) |>
+  filter(!is.na(student_number)) |>
+  distinct(student_number) |>
+  mutate(post_survey_completed = TRUE)
+
+completed_surveys <- full_join(
+  completed_pre_survey, completed_post_survey,
+  by = join_by(student_number),
+  relationship = "one-to-one"
+) |>
+  mutate(
+    number_completed_surveys = case_when(
+      pre_survey_completed & post_survey_completed ~ 2,
+      pre_survey_completed | post_survey_completed ~ 1
+    )
+  ) |>
+  tidyr::replace_na(
+    list(pre_survey_completed = FALSE, post_survey_completed = FALSE)
+  )
+
+completed_surveys |> readr::write_csv(
+  here("data", "cpsc-368_survey-participants.csv")
+)
+```
