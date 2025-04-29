@@ -1,0 +1,61 @@
+---
+title: "CPSC 103 survey"
+author: "Stephan Koenig"
+---
+
+## Setup
+
+```{r}
+#| label: setup
+#| echo: false
+
+library(conflicted)
+library(dplyr)
+conflicts_prefer(dplyr::filter)
+library(here)
+
+survey_file <- here("data", "raw", "cpsc-368_pre-survey.qs2")
+```
+
+### Qualtrics survey data
+
+This workflow assumes that you generated a [Qualtrics API key](https://api.qualtrics.com/ZG9jOjg3NjYzMg-api-key-authentication) and saved it securely with `keyring::key_set("qualtrics_api_key")` in your OS's secure secret store.
+In addition, request access to the Qualtrics "CPSC 103 worksheets survey" from Stephan Koenig.
+
+```{r}
+#| label: qualtrics
+#| eval: false
+
+# Do only once per system
+# keyring::key_set("qualtrics_api_key")
+qualtRics::qualtrics_api_credentials(
+  api_key = keyring::key_get("qualtrics_api_key"),
+  base_url = "ubc.yul1.qualtrics.com"
+)
+
+surveys <- qualtRics::all_surveys()
+survey_id <-
+  surveys$id[surveys$name == "CPSC 103: Autograder Survey (Pre) - More Open Ended"]
+qualtRics::fetch_survey(survey_id) |>
+  qs2::qs_save(survey_file)
+```
+
+## Analysis
+
+```{r}
+#| label: load-data
+
+survey <-
+  qs2::qs_read(survey_file) |>
+  janitor::clean_names()
+
+completed_survey <- survey |>
+  rename(student_number = q17_42) |>
+  filter(!is.na(student_number)) |>
+  distinct(student_number) |>
+  mutate(survey_completed = TRUE)
+
+completed_survey |> readr::write_csv(
+  here("data", "cpsc-103_survey-participants.csv")
+)
+```
