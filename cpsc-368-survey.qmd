@@ -14,6 +14,7 @@ library(dplyr)
 conflicts_prefer(dplyr::filter)
 library(here)
 
+opt_out_file <- here("data", "raw", "cpsc-368_opt-out.qs2")
 pre_survey_file <- here("data", "raw", "cpsc-368_pre-survey.qs2")
 post_survey_file <- here("data", "raw", "cpsc-368_post-survey.qs2")
 ```
@@ -35,10 +36,15 @@ qualtRics::qualtrics_api_credentials(
 )
 
 surveys <- qualtRics::all_surveys()
+opt_out_id <-
+  surveys$id[surveys$name == "CPSC 304/368: LLMs and SQL Opt Out"]
 pre_survey_id <-
   surveys$id[surveys$name == "CPSC 368: AI Use Survey (Beginning of Term)"]
 post_survey_id <-
   surveys$id[surveys$name == "CPSC 368: AI Use Survey (End of Term)"]
+
+qualtRics::fetch_survey(opt_out_id) |>
+  qs2::qs_save(opt_out_file)
 qualtRics::fetch_survey(pre_survey_id) |>
   qs2::qs_save(pre_survey_file)
 qualtRics::fetch_survey(post_survey_id) |>
@@ -46,6 +52,24 @@ qualtRics::fetch_survey(post_survey_id) |>
 ```
 
 ## Analysis
+
+### Opt-out
+
+```{r}
+#| label: opt-outs
+
+qs2::qs_read(opt_out_file) |>
+  janitor::clean_names() |>
+  filter(start_date <= lubridate::ymd("2025-04-30")) |>
+  select(q4, q2) |>
+  rename(
+    student_name = q4,
+    student_number = q2
+  ) |>
+  readr::write_csv(
+    here("data", "cpsc-368_study-opt-outs.csv")
+  )
+```
 
 ```{r}
 #| label: load-data
@@ -71,7 +95,8 @@ completed_post_survey <- post_survey |>
   mutate(post_survey_completed = TRUE)
 
 completed_surveys <- full_join(
-  completed_pre_survey, completed_post_survey,
+  completed_pre_survey,
+  completed_post_survey,
   by = join_by(student_number),
   relationship = "one-to-one"
 ) |>
@@ -85,7 +110,8 @@ completed_surveys <- full_join(
     list(pre_survey_completed = FALSE, post_survey_completed = FALSE)
   )
 
-completed_surveys |> readr::write_csv(
-  here("data", "cpsc-368_survey-participants.csv")
-)
+completed_surveys |>
+  readr::write_csv(
+    here("data", "cpsc-368_survey-participants.csv")
+  )
 ```

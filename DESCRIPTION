@@ -1,7 +1,0 @@
-Suggests:
-  devtools,
-  languageserver,
-  miniUI,
-  reprex,
-  styler,
-  usethis
